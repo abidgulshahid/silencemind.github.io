@@ -1,32 +1,114 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<style>
-.container {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.17/dist/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.17/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.17/dist/js/uikit-icons.min.js"></script>
+    <title>Welcome , {{request.user.username}}</title>
+   <style>
+       body {
+        background: #fafafa;;
+       }
 
-/* Then style the iframe to fit in the container div with full height and width */
-.responsive-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-}
-</style> 
+       #nav {
+           background-color: #03244d;
+           color:white;
+
+       }
+
+       #nav a{
+           color:white;
+       }
+
+       #nav h3 {
+           color:white;
+       }
+
+       #title {
+           border: 1px solid  #03244d;
+           border-radius: 5px;
+       }
+
+       footer {
+           border-top: 1px solid black;
+           margin-top: 2em;
+           text-align: center;
+       }
+
+       footer p {
+           margin-top: 2em;
+       }
+       </style>
 </head>
-<body> 
-  
-<div class="container"> 
+<body>
+  <nav class="uk-navbar-container uk-margin" uk-navbar>
+    <div class="uk-navbar-center">
 
- <iframe class="responsive-iframe" src="https://docs.google.com/document/d/e/2PACX-1vRKbAmAakC_fUj7enXebkUwN9sGNF-TbWoeLo4ZMHuKmLfIhbZBLRYUBxiPmjKQ_0oPtxjhIIaKux9z/pub?embedded=true"></iframe>
+        <div class="uk-navbar-center-left"><div>
+            <ul class="uk-navbar-nav">
+              
+            </ul>
+        </div></div>
+        <a class="uk-navbar-item uk-logo" href="#">Logo</a>
+       
+        </div></div>
 
+    </div>
+</nav>
+    <hr class="uk-divider-icon">
+    <div class="uk-container">
+    <div class="uk-tile uk-tile-default uk-padding-large" id="title" >
+
+
+<p><strong>Assalam-u-Alekum (Peace be upon you)</strong></p>
+<h2>
+<img src="https://thumbs.gfycat.com/AcrobaticMatureGazelle.webp" alt="computer" width="80"> About me
+</h2>
+
+<div >
+
+<ul>
+  <li>
+<b>👤 Name: </b> Abid Gul Shahid
+</li>
+  <li>
+<b>😄 Pronouns:</b> He/Him
+</li>
+  <li>
+<b>📍 Location:</b> Peshawar Pakistan 🇵🇰
+</li>
+  <li>
+<b>💼 Job: </b>Hackersray @ <a href="hackersray.com">Hackersray</a>
+</li>
+  <li>
+<b>📣 Languages:</b> English &amp; Urdu
+</li>
+</ul>
+
+<p>
+I'm <b>Abid Gull</b> a security software engineer diving into the world of cyber security. I'm a Penetration Tester at the Hackersray, where I find vulnerabilities in their products and help them to fix those vulnerabilities. I'm passionate about building things, breaking things 😜, love to code.
+</p>
 </div>
 
+ 
+
+
+<h3 id="field-of-interests">Field of Interests</h3>
+<p>Cyber Security, Web Development, Machine Learning, BlockChain, Exploit Development.</p>
+<h2>
+<img src="https://thumbs.gfycat.com/ScaryCreamyGlobefish.webp" alt="computer" width="80"> I'm currently ...
+</h2>
+
+<ul>
+<li>🔭 coding automation projects &amp; relaunching my personal website.</li>
+<li>🌱 learning React.js, Django, Machine Learning</li>
+<li>📚 Reading: <strong>&quot;Rich Dad Poor Dad&quot;</strong></li>
+<li>🎮 playing PUBG ⚔, Chess ♟</li>
+</ul>
+<p>[<img src="https://github-readme-stats.vercel.app/api?username=silencemind&amp;show_icons=true&amp;theme=radical" alt="Abid&#39;s github stats" /></p>
+<p><a href="https://git.io/streak-stats"><img src="https://github-readme-streak-stats.herokuapp.com/?user=silencemind" alt="GitHub Streak" /></a></p>
+
+</div>
 </body>
-</html>
